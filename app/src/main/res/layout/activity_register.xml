@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="#212121">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:contentDescription="Hapa Taxi Logo"
+        android:paddingTop="80dp"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/temp_logo" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:hint="Username"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        style="@style/AppTheme.Button.HapaTaxiRegular"
+        android:id="@+id/btnSignUp"
+        android:text="Sign Up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|center">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Log In"
+            android:gravity="end|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textColor="#FF9800"
+            android:background="@android:color/transparent"
+            android:onClick="goToLogin" />
+    </LinearLayout>
+
+</LinearLayout>

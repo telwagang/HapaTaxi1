@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="#212121">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:contentDescription="Hapa Taxi Logo"
+        android:paddingTop="80dp"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/temp_logo" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:text="Username"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:text="Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        style="@style/AppTheme.Button.HapaTaxiRegular"
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|center">
+
+        <Button
+            android:id="@+id/btnForgotPassword"
+            android:text="Forgot Password"
+            android:gravity="start|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_weight="0.5"
+            android:textColor="#FF9800"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:text="Sign Up"
+            android:gravity="end|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textColor="#FF9800"
+            android:background="@android:color/transparent"
+            android:onClick="goToRegister" />
+    </LinearLayout>
+
+</LinearLayout>
