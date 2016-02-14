@@ -1,83 +1,84 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_gravity="center_vertical"
     android:layout_width="match_parent"
-    android:padding="10dp"
     android:layout_height="match_parent"
-    android:background="#212121">
+    android:layout_gravity="center_vertical"
+    android:background="#212121"
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <ImageView
         android:layout_width="fill_parent"
-        android:contentDescription="Hapa Taxi Logo"
-        android:paddingTop="80dp"
-        android:paddingBottom="20dp"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/hapa_taxi_logo"
+        android:paddingBottom="20dp"
+        android:paddingTop="80dp"
         android:src="@drawable/temp_logo" />
 
     <EditText
         android:id="@+id/etEmail"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="#FFF"
-        android:textColor="#FFF" />
+        android:layout_marginBottom="10dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF" />
 
     <EditText
         android:id="@+id/etPhone"
-        android:hint="Phone Number"
-        android:inputType="phone"
-        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="#FFF"
-        android:textColor="#FFF" />
+        android:layout_marginBottom="10dp"
+        android:hint="@string/phonenumber"
+        android:inputType="phone"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF" />
 
     <EditText
         android:id="@+id/etUsername"
-        android:hint="Username"
-        android:inputType="text"
-        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="#FFF"
-        android:textColor="#FFF" />
+        android:layout_marginBottom="10dp"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF" />
 
     <EditText
         android:id="@+id/etPassword"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:layout_marginBottom="10dp"
-        android:textColor="#FFF"
-        android:textColorHint="#FFF"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF" />
 
     <Button
-        style="@style/AppTheme.Button.HapaTaxiRegular"
         android:id="@+id/btnSignUp"
-        android:text="Sign Up"
+        style="@style/AppTheme.Button.HapaTaxiRegular"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/sing_up" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:orientation="horizontal"
-        android:gravity="bottom|center">
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
 
         <Button
+
             android:id="@+id/btnLogin"
-            android:text="Log In"
-            android:gravity="end|center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:textColor="#FF9800"
             android:background="@android:color/transparent"
-            android:onClick="goToLogin" />
+            android:gravity="end|center_vertical"
+            android:onClick="goToLogin"
+            android:text="Log In"
+            android:textColor="#FF9800" />
     </LinearLayout>
 
 </LinearLayout>

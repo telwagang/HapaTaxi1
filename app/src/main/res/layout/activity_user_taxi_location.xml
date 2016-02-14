@@ -1,43 +1,52 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_gravity="center_vertical"
-    android:gravity="center"
     android:layout_width="match_parent"
-    android:padding="10dp"
     android:layout_height="match_parent"
-    android:background="#212121">
+    android:layout_gravity="center_vertical"
+    android:background="#212121"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <EditText
         android:id="@+id/etUserLocation"
-        android:text="Your Location"
-        android:inputType="text"
-        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"
+        android:text="@string/toLocation"
         android:textColor="#FFF" />
 
     <Button
-        style="@style/AppTheme.Button.HapaTaxiRegular"
         android:id="@+id/btnGetTaxis"
-        android:text="Get Taxis"
+        style="@style/AppTheme.Button.HapaTaxiRegular"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Get Taxis" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:padding="10dp"
         android:text="OR"
-        android:textColor="#FFF"
-        android:gravity="center_horizontal"/>
+        android:textColor="#FFF"/>
 
     <Button
-        style="@style/AppTheme.Button.HapaTaxiRegular"
         android:id="@+id/btnSeeAllTaxis"
-        android:text="See All Taxis"
+        style="@style/AppTheme.Button.HapaTaxiRegular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="gotoAllTaxis" />
+        android:onClick="gotoAllTaxis"
+        android:text="See All Taxis" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:onClick="toUserProfile"
+        android:src="@drawable/icon_user_default" />
 
 </LinearLayout>

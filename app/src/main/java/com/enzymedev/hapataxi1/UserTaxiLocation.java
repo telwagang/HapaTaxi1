@@ -3,10 +3,11 @@ package com.enzymedev.hapataxi1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 
-public class UserTaxiLocation extends ActionBarActivity {
+public class UserTaxiLocation extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,5 +19,9 @@ public class UserTaxiLocation extends ActionBarActivity {
     public void gotoAllTaxis(View view) {
         //redirect user to register page
         startActivity(new Intent(UserTaxiLocation.this, TaxiSearchResults.class));
+    }
+
+    public void toUserProfile(){
+        startActivity( new Intent(UserTaxiLocation.this , UserProfile.class));
     }
 }

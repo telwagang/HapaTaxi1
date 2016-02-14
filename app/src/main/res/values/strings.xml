@@ -1,10 +1,35 @@
 <resources>
     <string name="app_name">HapaTaxi1</string>
-
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_taxi_search_results">TaxiSearchResults</string>
     <string name="title_activity_user_taxi_location">UserTaxiLocation</string>
+    <string name="sing_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="hapa_taxi_logo">Hapa Taxi Logo</string>
+    <string name="available_taxis">Available taxis near you</string>
+    <string name="available_bajaji">Available bajaji near you</string>
+    <string name="user_profile">User Profile</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="rides">120 rides</string>
+    <string name="email_detailed">info@hapataxi.com</string>
+    <string name="available">Available</string>
+    <string name="full_name">John walker</string>
+    <string name="verfied">verified</string>
+    <string name="seekbar">Radius kilometers around you</string>
+    <string name="user_full_name">Darth Valder</string>
+    <string name="take_ride">Take The Ride</string>
+    <string name="toLocation">Where yhu wanna go ? </string>
+    <string name="profile_pic">profile_pic</string>
+    <string name="sample">What did you think of the ride ?</string>
+    <string name="sub">Submit</string>
+    <string name="review">Review</string>
 </resources>
